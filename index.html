@@ -72,6 +72,14 @@
         #messages { list-style-type: none; margin: 0; padding: 0; }
         #messages li { padding: 5px 10px; }
         #messages li:nth-child(odd) { background: #eee; }
+        footer {
+          display:block;
+          text-align:center;
+          font-family: "Podkova", Georgia, serif;
+          font-size:14px;
+          text-align:center;
+          text-shadow: 3px 3px 4px #A1A1A1;
+        }
     </style>
 </head>
 <body>
@@ -85,9 +93,10 @@
       <input id="m" class="message_content" autocomplete="off" placeholder="Type your message here" /><button>Send</button>
     </form>
   </div>
-<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-<script>
+  <footer>&copy; Codefresh 2015 | Example by <a href="http://socket.io/" target="_blank">Socket.io</a></footer>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
     var socket = io();
     $('form').submit(function(){
         socket.emit('chat message', $('#n').val() + ": " + $('#m').val());
