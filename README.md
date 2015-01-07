@@ -14,4 +14,4 @@ Start chatting
 
 Click on the 'Play' button at the top toolbar.
 
-![Express-angular](http://i.imgur.com/BjXZgWs.png)
+![Socketio-example](http://i.imgur.com/v4EczBp.png)
